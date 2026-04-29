@@ -47,7 +47,7 @@ output application/xml
 ns tns http://tempuri.org/
 ---
 {
-    tns#Add: {
+    tns#subtract: {
         tns#intA: payload.a,
         tns#intB: payload.b
     }
@@ -67,7 +67,7 @@ output application/json
 ns tns http://tempuri.org/
 ---
 {
-    "result": payload.body.tns#AddResponse.tns#AddResult
+    "result": payload.body.tns#subtractResponse.tns#substractResult
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
